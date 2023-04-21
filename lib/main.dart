@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:knownow/screens/register/register.dart';
+import 'package:knownow/screens/welcome.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const RegisterScreen(),
+      home: const WelcomeScreen(),
+      routes: {
+        '/register': (context) => const RegisterScreen(),
+      },
     );
   }
 }
