@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:knownow/screens/dashboard.dart';
+import 'package:knownow/screens/home.dart';
 import 'package:knownow/screens/register/register.dart';
 import 'package:knownow/screens/welcome.dart';
 
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       // home: const WelcomeScreen(),
-      home: const Dashboard(),
+      home: const HomeScreen(),
       routes: {
         '/register': (context) => const RegisterScreen(),
       },
